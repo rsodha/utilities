@@ -1,0 +1,10 @@
+OPTIONS="-v -c -r --delete"
+
+SOURCE="/mnt/t6100rs/Music/CarDrive/"
+
+echo "Syncing Music8"
+rsync $OPTIONS "$SOURCE" "/media/t6100rs/MUSIC8/CarDrive/"
+
+
+echo "Syncing Music32"
+rsync $OPTIONS "$SOURCE" "/media/t6100rs/MUSIC32/CarDrive/"
